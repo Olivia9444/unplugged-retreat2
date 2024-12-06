@@ -396,7 +396,7 @@ margin-bottom: 50px;
    }
 
    .features .features-item-description {
-       width: 50%;
+       width: 62%;
    }
 
    /* Reviews */
@@ -455,7 +455,8 @@ margin-bottom: 50px;
       justify-content: space-between;
       align-items: flex-start;
     }
-  
+
+    
     /* ==========================================================================
        FAQ Page
        ========================================================================== */
@@ -472,14 +473,65 @@ margin-bottom: 50px;
       width: 100%;
     }
   }
-  
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+@media only screen and (min-width:1200px){
+  /*Desktop styles here*/
 
+  /* General Styles*/
+.content-wrapper{
+  max-width: 960px;
+}
+
+  /*header*/
+header{
+padding: 15px 0;
+}
+  /*hero*/
+.hearo-area h1{
+width: 80%;
+}
+
+aside .content-wrapper {
+  justify-content: space-around;
+}
+
+aside .content-wrapper .form-decription, aside .content-wrapper .form{
+width: 30%;
+}
+
+/*Features*/
+.features h2 {
+width: 90%;
+}
+
+.features article {
+flex-basis: 33%;
+}
+
+.reviews articles div {
+width: 43%
+}
+
+/* ==========================================================================
+  About Page
+  ========================================================================== */
+.mission h2, .contact-section .content-wrapper h2{
+  width: 95%; 
+}
+
+/* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+
+  } 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
