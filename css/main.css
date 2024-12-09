@@ -86,21 +86,65 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*Genreal Styles*/
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
+ul,
+ol {list-style-type: none;}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  font-size: 1.125em,
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
-  outline: 3px dotted red;
   width: 90%;
   margin: 50px 0;
 }
+
+/*--------Base header- Footer Styles------------*/
+
 header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
 }
-header .content-wrapper{
+
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row-wrap;
+  flex-flow: row wrap;
   margin: 0;
 }
 
@@ -110,14 +154,14 @@ header .content-wrapper{
   margin: 10px 0 20px 0;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-header nav{
-  width:60%;
+header nav {
+  width: 60%;
 }
 
 footer {
@@ -127,44 +171,51 @@ footer {
   text-align: center;
 }
 
-footer p{
+footer p {
   margin: 0;
 }
 
-footer .social-icons{
-display: flex;
-justify-content: space-around;
-align-items: center;
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-footer .social-icons p{
-display: flex;
-justify-content: center;
-align-items: center;
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer .content-wrapper{
+footer .content-wrapper {
   width: 55%;
 }
 
-footer .contact{
+footer .contact {
   margin-bottom: 50px;
 }
 
-footer .copyright{
+footer .copyright {
   margin: 20px 0;
 }
+
+
+/*-----------Moble Styles ---Homepage------*/
+
+/* Hero Area*/
 
 .hero-area {
   display: flex;
   justify-content: center;
 }
+
 /*Aside*/
 
-aside{
+aside {
   display: flex;
   justify-content: center;
 }
+
 /*Features*/
 
 .features {
@@ -173,24 +224,25 @@ aside{
 }
 
 .features .features-items {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
 }
 
 .features h2 {
-margin-bottom: 60px;  
+  margin-bottom: 60px;
 }
 
-.features article{
-width: 63%;
-margin: 30px 0;
+.features article {
+  width: 63%;
+  margin: 30px 0;
 }
 
 .features p {
   margin: 0;
 }
+
 /*Reviews*/
 
 .reviews {
@@ -198,11 +250,11 @@ margin: 30px 0;
   justify-content: center;
 }
 
-.reviews h2{
-margin-bottom: 40px;
+.reviews h2 {
+  margin-bottom: 40px;
 }
 
-.reviews h3{
+.reviews h3 {
   width: 55%;
   padding: 20px 0;
 }
@@ -222,8 +274,8 @@ margin-bottom: 40px;
   justify-content: center;
 }
 
-.contact-content p{
- margin: 0;
+.contact-content p {
+  margin: 0;
 
 }
 
@@ -232,26 +284,27 @@ margin-bottom: 40px;
    ========================================================================== */
 
 .faq {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.faq .content-wrapper{
-display: flex;
-justify-content: center;
-align-items: flex-start;
-flex-flow: row wrap;
-margin: 50px 0 0 0;
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
 .faq h2 {
-margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .faq-content {
-margin-bottom: 50px;
+  margin-bottom: 50px;
 
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -260,8 +313,7 @@ margin-bottom: 50px;
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+.hidden {
   display: none !important;
 }
 
@@ -342,268 +394,277 @@ margin-bottom: 50px;
 
 
 @media only screen and (min-width:768px) {
+
   /*General styles*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
   }
-   /* Header */
- 
-   header {
+
+ /* Header */
+
+  header {
     padding: 33px 0;
-   }
+  }
 
-   header .content-wrapper {
-       width:100%;
-       justify-content: space-between;
-   }
-
-   header nav {
-       width:20%; 
-   }
-
-   header nav ul {
+  header .content-wrapper {
+    width: 100%;
     justify-content: space-between;
-   }
+  }
 
-   .header-divider {
-       display: none;
-   }
+  header nav {
+    width: 20%;
+  }
 
-   /* Hero Area */
+  header nav ul {
+    justify-content: space-between;
+  }
 
-   /* Aside */
-   aside .content-wrapper {
-       margin: 50px 0;
-       display: flex;
-       justify-content: space-between;
-       align-content: flex-start;
-   }
+  .header-divider {
+    display: none;
+  }
 
-   aside .content-wrapper .form-description,
-   aside .content-wrapper .form {        
-       width: 40%;         
-       margin: 0;
-   }
+  /* Hero Area */
 
-   /* Features */
+  /* Aside */
+  aside .content-wrapper {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
 
-   .features article {
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* Features */
+
+  .features article {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-   }
+  }
 
-   .features .features-item-description {
-       width: 62%;
-   }
+  .features .features-item-description {
+    width: 62%;
+  }
 
-   /* Reviews */
-   .reviews article {
+  /* Reviews */
+  .reviews article {
     display: flex;
     justify-content: space-between;
-   }
-   
-   .reviews article div {
-       width: 49%;        
-   }
+  }
 
-   /* Footer */
-   footer .content-wrapper {
-       width:65%; 
-   }
-   
-   .footer-content {
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* Footer */
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   }
+  }
 
-   footer .contact {
-       margin-bottom: 0;
-   }
+  footer .contact {
+    margin-bottom: 0;
+  }
 
-   footer .copyright {
-       width: 100%;
-   }
+  footer .copyright {
+    width: 100%;
+  }
 }
-  /* Style adjustments for viewports that meet the condition */
-}
+
+/* Style adjustments for viewports that meet the condition */
+
 
 /* ==========================================================================
      About Page
      ========================================================================== */
 
-     .mission-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding-top: 20px
-    }
-  
-    .mission-content p {
-      width: 45%;
-    }
-  
-    .contact-section .content-wrapper h2 {
-      width: 80%;
-    }
-  
-    .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20px
+}
 
-    
-    /* ==========================================================================
+.mission-content p {
+  width: 45%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* ==========================================================================
        FAQ Page
        ========================================================================== */
-  
-    .faq .content-wrapper {
-      justify-content: space-between;
-    }
-  
-    .faq-content {
-      flex-basis: 45%;
-    }
-  
-    .faq h2 {
-      width: 100%;
-    }
-  }
+
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 45%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
-@media only screen and (min-width:1200px){
+
+@media only screen and (min-width:1200px) {
   /*Desktop styles here*/
 
   /* General Styles*/
-.content-wrapper{
-  max-width: 960px;
-}
+  .content-wrapper {
+    max-width: 960px;
+  }
 
   /*header*/
-header{
-padding: 15px 0;
-}
+  header {
+    padding: 15px 0;
+  }
+
   /*hero*/
-.hearo-area h1{
-width: 80%;
-}
+  .hearo-area h1 {
+    width: 80%;
+  }
 
-aside .content-wrapper {
-  justify-content: space-around;
-}
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
-aside .content-wrapper .form-decription, aside .content-wrapper .form{
-width: 30%;
-}
+  aside .content-wrapper .form-decription,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
 
-/*Features*/
-.features h2 {
-width: 90%;
-}
+  /*Features*/
+  .features h2 {
+    width: 90%;
+  }
 
-.features article {
-flex-basis: 33%;
-}
+  .features article {
+    flex-basis: 33%;
+  }
 
-.reviews articles div {
-width: 43%
-}
+  .reviews articles div {
+    width: 42%
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
   About Page
   ========================================================================== */
-.mission h2, .contact-section .content-wrapper h2{
-  width: 95%; 
-}
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
 
-/* ==========================================================================
+  /* ==========================================================================
   FAQ Page
   ========================================================================== */
   .faq h2 {
     width: 100%;
+  }
+}
 
-  } 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+  @media print {
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  /*
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+    thead {
+      display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
-}
-
