@@ -82,7 +82,12 @@ fieldset {
 textarea {
   resize: vertical;
 }
-
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -728,7 +733,7 @@ faq-content h4 {
 
     aside .content-wrapper .form-decription,
     aside .content-wrapper .form {
-      width: 30%;
+      width: 40%;
     }
 
     .form-description p {
@@ -760,7 +765,12 @@ faq-content h4 {
     /* ==========================================================================
   About Page
   ========================================================================== */
-    .mission h2,
+  .map figure {
+    padding-bottom: 37.5%;
+  }  
+
+
+  .mission h2,
     .contact-section .content-wrapper h2 {
       width: 95%;
       font-size: 3em;
